@@ -21,7 +21,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <h1>Meu componente APP</h1>
+      <h1>Pokedex</h1>
       <PokeLista pokeList={pokeList} />
     </div>
   );

@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router";
+
 export default function PokeLista({ pokeList }) {
-  function handleAdicionaCarrinho() {
-    console.log("Adicionando ao carrinho");
+  const navigate = useNavigate();
+
+  function handleDirecionaDetalhes() {
+    navigate("/detalhes");
   }
 
   return (
@@ -8,7 +12,7 @@ export default function PokeLista({ pokeList }) {
       {pokeList.map((item, index) => (
         <ul key={index}>
           <li>Nome: {item.name}</li>
-          <button onClick={handleAdicionaCarrinho}>Ver Detalhes</button>
+          <button onClick={handleDirecionaDetalhes}>Ver Detalhes</button>
         </ul>
       ))}
     </div>
