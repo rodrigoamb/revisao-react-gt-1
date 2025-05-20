@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import ListaTenis from "../components/PokeLista";
 import PokeLista from "../components/PokeLista";
 
 export default function HomePage() {
