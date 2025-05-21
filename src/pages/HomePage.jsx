@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PokeLista from "../components/PokeLista";
+import LayoutWrapper from "../components/LayoutWrapper";
 
 export default function HomePage() {
   const [pokeList, setPokeList] = useState([]);
@@ -17,9 +18,9 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div>
+    <LayoutWrapper>
       <h1>Pokedex</h1>
       <PokeLista pokeList={pokeList} />
-    </div>
+    </LayoutWrapper>
   );
 }
