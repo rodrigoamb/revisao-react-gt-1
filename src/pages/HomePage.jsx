@@ -16,8 +16,6 @@ export default function HomePage() {
     fetchDataPokemon();
   }, []);
 
-  console.log(pokeList);
-
   return (
     <div>
       <h1>Pokedex</h1>
